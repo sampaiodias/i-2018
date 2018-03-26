@@ -1,5 +1,10 @@
 package br.ufg.inf.sampaiodias.i2018.topico1;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import org.junit.After;
+import static org.junit.Assert.assertEquals;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -10,12 +15,27 @@ import org.junit.Test;
  */
 public class Exercicio01Test {
     
+    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+    private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
+
+    @Before
+    public void setUpStreams() {
+        System.setOut(new PrintStream(outContent));
+        System.setErr(new PrintStream(errContent));
+    }
+
+    @After
+    public void restoreStreams() {
+        System.setOut(System.out);
+        System.setErr(System.err);
+    }
+    
     @Test
     public void testSimpleFile() throws Exception {
-
         String[] args = new String[1];
         args[0] = "test/br/ufg/inf/sampaiodias/i2018/topico1/simple.txt"; 
         Exercicio01.main(args);
+        assertEquals("74686973", outContent.toString());
     }
     
     @Test(expected = NullPointerException.class)

@@ -23,9 +23,12 @@ public class Exercicio01 {
         BufferedReader br = new BufferedReader(isr);
         
         String linha = br.readLine();
-        for (int i = 0; i < linha.length(); i++) {
-            System.out.print(linha.charAt(i));
-            if (i >= 4) {
+        char[] linhaToHex = linha.toCharArray();
+        
+        for (int i = 0; i < linhaToHex.length; i++) {
+            String hex = Integer.toHexString((int)linhaToHex[i]);
+            System.out.print(hex);
+            if (i >= 3) {
                 break;
             }
         }

@@ -8,7 +8,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Classe que resolve o Exercício 03 do Tópico 01 da disciplina de Integração
+ * Classe que testa o Exercício 03 do Tópico 01 da disciplina de Integração
  * de Aplicações (Semestre 2018-1) de Engenharia de Software.
  * 
  * @author Lucas Sampaio Dias

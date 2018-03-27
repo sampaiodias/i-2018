@@ -40,6 +40,15 @@ public class Exercicio01Test {
         assertEquals("74686973", outContent.toString());
     }
     
+    @Test
+    public void testClassFile() throws Exception {
+        String[] args = new String[1];
+        args[0] = 
+                "test/br/ufg/inf/sampaiodias/i2018/topico1/testClassFile.class"; 
+        Exercicio01.main(args);
+        assertEquals("cafebabe", outContent.toString());
+    }
+    
     @Test(expected = NullPointerException.class)
     public void testNullArgs() throws Exception {
         String[] args = null;

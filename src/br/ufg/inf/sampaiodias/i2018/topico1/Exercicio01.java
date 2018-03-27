@@ -1,6 +1,7 @@
 package br.ufg.inf.sampaiodias.i2018.topico1;
 
 import java.io.BufferedReader;
+import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -19,18 +20,10 @@ public class Exercicio01 {
             IOException {
         
         FileInputStream fis = new FileInputStream(args[0]);
-        InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
-        BufferedReader br = new BufferedReader(isr);
-        
-        String linha = br.readLine();
-        char[] linhaToHex = linha.toCharArray();
-        
-        for (int i = 0; i < linhaToHex.length; i++) {
-            String hex = Integer.toHexString((int)linhaToHex[i]);
-            System.out.print(hex);
-            if (i >= 3) {
-                break;
-            }
-        }
+        DataInputStream dis = new DataInputStream(fis);
+
+        int valor = dis.readInt();
+        dis.close();
+        System.out.print(Integer.toHexString(valor));
     }       
 }

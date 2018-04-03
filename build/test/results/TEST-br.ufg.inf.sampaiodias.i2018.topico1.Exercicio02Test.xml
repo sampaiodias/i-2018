@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="LAPTOP-FHKE4NTD" name="br.ufg.inf.sampaiodias.i2018.topico1.Exercicio02Test" skipped="0" tests="2" time="0.087" timestamp="2018-04-02T22:41:44">
+<testsuite errors="0" failures="0" hostname="LAPTOP-FHKE4NTD" name="br.ufg.inf.sampaiodias.i2018.topico1.Exercicio02Test" skipped="0" tests="2" time="0.086" timestamp="2018-04-03T00:51:51">
   <properties>
     <property name="netbeans.autoupdate.country" value="BR" />
     <property name="nb.wait.for.caches" value="true" />
@@ -38,7 +38,7 @@
     <property name="user.name" value="Lucas" />
     <property name="copylibs.rebase" value="true" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner br.ufg.inf.sampaiodias.i2018.topico1.Exercicio02Test skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Lucas\Documents\GitHub\i-2018\build\test\results\TEST-br.ufg.inf.sampaiodias.i2018.topico1.Exercicio02Test.xml crashfile=C:\Users\Lucas\Documents\GitHub\i-2018\build\junitvmwatcher9117479446550688475.properties propsfile=C:\Users\Lucas\Documents\GitHub\i-2018\build\junit7233103380305136051.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner br.ufg.inf.sampaiodias.i2018.topico1.Exercicio02Test skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Lucas\Documents\GitHub\i-2018\build\test\results\TEST-br.ufg.inf.sampaiodias.i2018.topico1.Exercicio02Test.xml crashfile=C:\Users\Lucas\Documents\GitHub\i-2018\build\junitvmwatcher1510938733756092680.properties propsfile=C:\Users\Lucas\Documents\GitHub\i-2018\build\junit3361936710188069038.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -312,7 +312,7 @@
     <property name="ant.file.type.i-2018" value="file" />
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
   </properties>
-  <testcase classname="br.ufg.inf.sampaiodias.i2018.topico1.Exercicio02Test" name="testIsNotJPEG" time="0.01" />
+  <testcase classname="br.ufg.inf.sampaiodias.i2018.topico1.Exercicio02Test" name="testIsNotJPEG" time="0.011" />
   <testcase classname="br.ufg.inf.sampaiodias.i2018.topico1.Exercicio02Test" name="testIsJPEG" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

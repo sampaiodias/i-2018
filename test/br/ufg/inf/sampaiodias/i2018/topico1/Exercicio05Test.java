@@ -1,14 +1,8 @@
 package br.ufg.inf.sampaiodias.i2018.topico1;
 
 import java.io.BufferedReader;
-import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -51,6 +45,9 @@ public class Exercicio05Test {
            builder.append(byteToString(linha.substring(2)));
         }
         conteudoArquivo2 = builder.toString().getBytes("UTF-8");
+        
+        System.out.println(conteudoArquivo1);
+        System.out.println(new String(conteudoArquivo2, "UTF-8"));
         
         assertEquals(conteudoArquivo1, 
                 new String(conteudoArquivo2, "UTF-8"));

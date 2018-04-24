@@ -14,13 +14,13 @@ public class Exercicio02Test {
     @Test
     public void testIsJPEG() throws Exception {
         String path = 
-                "test/br/ufg/inf/sampaiodias/i2018/topico1/OrangeSquare.jpg";
+                "src/test/resources/OrangeSquare.jpg";
         assertEquals(Exercicio02.isJPEG(path), true);
     }
     
     @Test
     public void testIsNotJPEG() throws Exception {
-        String path = "test/br/ufg/inf/sampaiodias/i2018/topico1/simple.txt";
+        String path = "src/test/resources/simple.txt";
         assertEquals(Exercicio02.isJPEG(path), false);
     }
 }

@@ -35,7 +35,7 @@ public class Exercicio03Test {
     @Test
     public void testSimpleFile() throws Exception {
         String[] args = new String[1];
-        args[0] = "test/br/ufg/inf/sampaiodias/i2018/topico1/simple.txt"; 
+        args[0] = "src/test/resources/simple.txt"; 
         Exercicio03.main(args);
         assertEquals("this is a simple text file\n", outContent.toString());
     }

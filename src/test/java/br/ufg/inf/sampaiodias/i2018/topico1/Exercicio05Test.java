@@ -17,8 +17,8 @@ public class Exercicio05Test {
     @Test
     public void testCorrectConversion() throws Exception {
         String[] args = new String[2];
-        args[0] = "test/br/ufg/inf/sampaiodias/i2018/topico1/simple.txt";
-        args[1] = "test/br/ufg/inf/sampaiodias/i2018/topico1/byteTest.txt";
+        args[0] = "src/test/resources/simple.txt";
+        args[1] = "src/test/resources/byteTest.txt";
         Exercicio05.main(args);
         
         FileInputStream fis = new FileInputStream(args[0]);

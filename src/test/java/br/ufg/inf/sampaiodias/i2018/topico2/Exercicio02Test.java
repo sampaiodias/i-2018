@@ -22,8 +22,7 @@ public class Exercicio02Test {
     public void testSerializarDesserializar() {
         Serializavel e = new Serializavel();
         e.nome = "Teste";
-        String filePath = "test/br/ufg/inf/sampaiodias/i2018/topico2/"
-                + "testeSerializavel.ser";
+        String filePath = "src/test/resources/testeSerializavel.ser";
         serializar(e, filePath);
         e = (Serializavel) desserializar(filePath);
         assertEquals(e.nome, "Teste");

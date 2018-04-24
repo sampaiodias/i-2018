@@ -17,7 +17,7 @@ public class Exercicio04Test {
     @Test
     public void testCorrectContent() throws Exception {
         String[] args = new String[2];
-        args[0] = "test/br/ufg/inf/sampaiodias/i2018/topico1/printTest.txt";
+        args[0] = "src/test/resources/printTest.txt";
         args[1] = "a b c d e f";
         Exercicio04.main(args);
         

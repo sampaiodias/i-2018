@@ -31,6 +31,18 @@ public class Exercicio1Test {
         String[] args = new String[1];
         args[0] = "src/test/resources/alunos.csv";
         Exercicio1.main(args);
-        fail("The test case is a prototype.");
+        
+        String conteudoGerado = getConteudoGerado();
+        String conteudoModelo = getConteudoModelo();
+        
+        assertEquals(conteudoModelo, conteudoGerado);
     }    
+
+    private String getConteudoGerado() {
+        return "";
+    }
+
+    private String getConteudoModelo() {
+        return "";
+    }
 }

@@ -1,5 +1,9 @@
 package br.ufg.inf.sampaiodias.i2018.topico3;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import javax.xml.parsers.ParserConfigurationException;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -22,9 +26,10 @@ public class Exercicio1Test {
     }
 
     @Test
-    public void testMain() {
+    public void testMain() throws UnsupportedEncodingException, IOException, 
+            FileNotFoundException, ParserConfigurationException {
         String[] args = new String[1];
-        args[1] = "src/test/resources/alunos.csv";
+        args[0] = "src/test/resources/alunos.csv";
         Exercicio1.main(args);
         fail("The test case is a prototype.");
     }    

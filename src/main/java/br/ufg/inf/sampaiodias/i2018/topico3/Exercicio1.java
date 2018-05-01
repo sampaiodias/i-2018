@@ -13,7 +13,6 @@ import javax.xml.parsers.*;
 import javax.xml.transform.*;
 import javax.xml.transform.dom.*;
 import javax.xml.transform.stream.*;
-import org.xml.sax.*;
 import org.w3c.dom.*;
 
 /**
@@ -27,7 +26,16 @@ public class Exercicio1 {
             UnsupportedEncodingException,
             IOException,
             ParserConfigurationException {
-        FileInputStream fis = new FileInputStream(args[0]);
+        
+        Document dom = gerarDocumentAlunos(args[0]);
+        Path path = Paths.get(args[0]);
+        escreverArquivoXML(dom, path.getParent() + "\\alunos.xml");
+    }
+    
+    private static Document gerarDocumentAlunos(String path) 
+            throws FileNotFoundException, UnsupportedEncodingException, 
+            ParserConfigurationException, IOException {
+        FileInputStream fis = new FileInputStream(path);
         InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
         BufferedReader br = new BufferedReader(isr);
 
@@ -58,9 +66,7 @@ public class Exercicio1 {
         }
         
         dom.appendChild(alunos);
-        
-        Path path = Paths.get(args[0]);
-        escreverArquivoXML(dom, path.getParent() + "\\alunos.xml");
+        return dom;
     }
     
     private static void escreverArquivoXML(Document dom, String path) 

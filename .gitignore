@@ -141,3 +141,16 @@ local.properties
 # TeXlipse plugin
 .texlipse
 /dist/
+
+### Netbeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+build.xml
+manifest.mf
+
+### Others ###
+alunos.xml

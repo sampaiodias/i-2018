@@ -15,14 +15,4 @@ package br.ufg.inf.sampaiodias.i2018.topico3;
 public class Calcado {
     public String marca;
     public float preco;
-    
-    /**
-     * Cria um Calçado da marca especificada
-     * @param marca nome da marca do Calçado
-     * @param preco valor monetario do Calçado
-     */
-    public Calcado(String marca, float preco) {
-        this.marca = marca;
-        this.preco = preco;
-    }
 }

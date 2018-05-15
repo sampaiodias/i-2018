@@ -25,8 +25,19 @@ import org.w3c.dom.*;
  * @author Lucas Sampaio Dias
  */
 public class Exercicio1 {
+    
+    /**
+     * Gera um arquivo XML de acordo com o arquivo com informações sobre
+     * alunos em CSV
+     * 
+     * @param args
+     * @throws FileNotFoundException O arquivo CSV precisa existir e seu
+     * caminho precisa ser especificado corretamente.
+     * @throws IOException O método precisa necessariamente de um parâmetro.
+     * @throws ParserConfigurationException O método precisa necessariamente de 
+     * um parâmetro.
+     */
     public static void main(String[] args) throws FileNotFoundException, 
-            UnsupportedEncodingException,
             IOException,
             ParserConfigurationException {
         

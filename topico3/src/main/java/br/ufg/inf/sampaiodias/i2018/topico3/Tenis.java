@@ -16,7 +16,7 @@ public class Tenis extends Calcado{
     public String esporte;
     
     /**
-     * Cria um Tenis da marca especificada
+     * Cria um Tenis com os atributos especificados
      * @param marca nome da marca do Tênis
      * @param preco valor monetario do Tênis
      * @param esporte para qual o esporte este Tênis é apropriado

@@ -1,5 +1,11 @@
+/*
+ * Copyright (c) 2018.
+ * Instituto de Informática (UFG)
+ * Creative Commons Attribution 4.0 International License.
+ */
 package br.ufg.inf.sampaiodias.i2018.topico3;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -16,20 +22,15 @@ import static org.junit.Assert.*;
  * @author Lucas Sampaio Dias
  */
 public class Exercicio1Test {
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
     @Test
     public void testMain() throws UnsupportedEncodingException, IOException, 
             FileNotFoundException, ParserConfigurationException {
         String[] args = new String[1];
-        args[0] = "src/test/resources/alunos.csv";
+        ClassLoader classLoader = getClass().getClassLoader();
+	File file = new File(classLoader.getResource("alunos.csv").getFile());
+        System.out.println(file.getAbsolutePath());
+        args[0] = file.getAbsolutePath();
         Exercicio1.main(args);
         
         String conteudoGerado = getConteudoGerado();

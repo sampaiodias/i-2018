@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2018.
+ * Instituto de Informática (UFG)
+ * Creative Commons Attribution 4.0 International License.
+ */
 package br.ufg.inf.sampaiodias.i2018.topico3;
 
 import java.io.BufferedReader;
@@ -7,8 +12,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import javax.xml.parsers.*;
 import javax.xml.transform.*;
 import javax.xml.transform.dom.*;

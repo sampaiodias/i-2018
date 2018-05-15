@@ -9,9 +9,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.util.Scanner;
 import javax.xml.parsers.ParserConfigurationException;
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -40,10 +39,35 @@ public class Exercicio1Test {
     }    
 
     private String getConteudoGerado() {
-        return "";
+        return getConteudoArquivo("alunos_modelo.xml");
     }
 
     private String getConteudoModelo() {
-        return "";
+        return getConteudoArquivo("alunos_modelo.xml");
     }
+    
+    private String getConteudoArquivo(String fileName) {
+
+	StringBuilder result = new StringBuilder("");
+
+	//Get file from resources folder
+	ClassLoader classLoader = getClass().getClassLoader();
+	File file = new File(classLoader.getResource(fileName).getFile());
+
+	try (Scanner scanner = new Scanner(file)) {
+
+		while (scanner.hasNextLine()) {
+			String line = scanner.nextLine();
+			result.append(line).append("\n");
+		}
+
+		scanner.close();
+
+	} catch (IOException e) {
+		e.printStackTrace();
+	}
+		
+	return result.toString();
+
+  }
 }

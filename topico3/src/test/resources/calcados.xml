@@ -1,0 +1,14 @@
+<calcados>
+	<tenis>
+		<marca>Adidas</marca>
+		<preco>200</preco>
+		<esporte>Boliche</esporte>
+	</tenis>
+	<sapato>
+		<marca>Constance</marca>
+		<preco>300</preco>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+	</sapato>
+</calcados>

@@ -28,7 +28,7 @@ public class Exercicio1Test {
         String[] args = new String[1];
         ClassLoader classLoader = getClass().getClassLoader();
 	File file = new File(classLoader.getResource("alunos.csv").getFile());
-        System.out.println(file.getAbsolutePath());
+
         args[0] = file.getAbsolutePath();
         Exercicio1.main(args);
         

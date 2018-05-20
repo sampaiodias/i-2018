@@ -10,12 +10,16 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
 
 /**
  * Classe que resolve o Exercício 01 do Tópico 03 da disciplina de Integração
@@ -36,14 +40,25 @@ public class Exercicio2 {
      * @throws java.io.IOException
      */
     public static void main(String[] args) throws FileNotFoundException, 
-            IOException {
-        XmlMapper xmlMapper = new XmlMapper();
-        xmlMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        String xml = inputStreamToString(new FileInputStream(args[0]));
-        Calcados c = xmlMapper.readValue(xml, Calcados.class);
-        for (Calcado calc : c.calcados) {
-            System.out.println(calc.toString());
-        }
+            IOException,
+            JAXBException {
+//        XmlMapper xmlMapper = new XmlMapper();
+//        xmlMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+//        String xml = inputStreamToString(new FileInputStream(args[0]));
+//        Calcados c = xmlMapper.readValue(xml, Calcados.class);
+//        for (Calcado calc : c.calcados) {
+//            System.out.println(calc.toString());
+//        }
+
+//           JAXBContext context = JAXBContext.newInstance(Calcados.class);
+//           Unmarshaller un = context.createUnmarshaller();
+//           Calcados c = (Calcados)un.unmarshal(new FileReader(args[0]));
+//           System.out.println(c.calcados);
+           
+//           JAXBContext context = JAXBContext.newInstance(Calcado[].class);
+//           Unmarshaller un = context.createUnmarshaller();
+//           Calcado[] c = (Calcado[])un.unmarshal(new FileReader(args[0]));
+//           System.out.println(c);
     }
     
     public static String inputStreamToString(InputStream is) throws IOException {

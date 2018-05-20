@@ -5,21 +5,15 @@
  */
 package br.ufg.inf.sampaiodias.i2018.topico3;
 
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import java.util.ArrayList;
-import java.util.List;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Classe "Wrapper" para realizar importação de Calçados via arquivo XML
  * 
  * @author Lucas
  */
+@XmlRootElement()
 public class Calcados {
-    @JacksonXmlElementWrapper(useWrapping = false)
     public ArrayList<Calcado> calcados;
-    
-    public Calcados() {
-        //calcados = new List<Calcado>();
-    }
 }
